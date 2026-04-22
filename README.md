@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# MSPR 2 (2025-2026) - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cette application est réalisée dans le cadre de la 2e MSPR du parcours EISI de l'EPSI à Lille.\
+Elle a pour but de mettre en place un système de mot de passe à usage unique avec rotation régulière.
 
-## Available Scripts
+## Conventions de code
 
-In the project directory, you can run:
+Le projet suit les conventions de code suivantes :
+- 2 espaces pour l'indentation.
+- Utilisation de guillemets simples pour les chaînes de caractères.
+- Utilisation de points-virgules à la fin des instructions.
+- Nommage clair et descriptif des variables, fonctions et composants en anglais.
+- Utilisation de la notation camelCase pour les noms de variables et de fonctions.
+- Utilisation de la notation PascalCase pour les noms de composants React.
+- Utilisation de commentaires pour expliquer les parties complexes du code.
+- Utilisation de TypeScript, sans usage de `any`, pour assurer une typage strict et éviter les erreurs de type.
+
+## Linting
+
+EsLint est utilisé pour maintenir la qualité du code.\
+Il est configuré pour suivre les meilleures pratiques de développement et éviter les erreurs courantes.\
+Vous pouvez exécuter `npm run lint` pour vérifier le code et `npm run lint:fix` pour corriger automatiquement les problèmes détectés.
+
+Une étape de lint doit être ajouté dans la chaine d'intégration continue.
+
+## Git
+
+Le projet utilise Git pour le contrôle de version.\
+Il est recommandé de suivre les bonnes pratiques de Git, telles que :
+
+### Nommage des commits
+- Préfixer les noms de commit avec des Gitmojis adaptés pour indiquer le type de changement (par exemple, :sparkles: pour une nouvelle fonctionnalité, :bug: pour une correction de bug, etc.). [voir gitmoji](https://gitmoji.dev/)
+- Utiliser un terme d'action en suite du gitmoji (par exemple: ✨ added user authentication).
+
+### Recommandations globales
+
+- Faire des commits fréquents et significatifs.
+- Utiliser des messages de commit clairs et descriptifs (en anglais).
+- Créer des branches pour les nouvelles fonctionnalités ou les corrections de bugs, et les fusionner une fois terminées.
+- Utiliser des pull requests pour les revues de code et les discussions avant la fusion.
+- Éviter de committer des fichiers générés ou des dépendances (utiliser un fichier `.gitignore` approprié).
+
+## Scripts
+
+Au sein du projet, vous pouvez exécuter les commandes suivantes :
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Démarre l'application en mode développement.\
+Ouvrez [http://localhost:3000](http://localhost:3000) pour la visualiser dans le navigateur.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+La page se rechargera automatiquement si le code est modifié.\
+Vous verrez également les éventuelles erreurs de lint dans la console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Démarre les tests en mode interactif.\
+Consultez la section sur [l'exécution des tests](https://facebook.github.io/create-react-app/docs/running-tests) pour
+plus d'informations.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compile l'application pour la production dans le dossier `build`.\
+Il regroupe correctement React en mode production et optimise la construction pour les meilleures performances.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+L'application est alors prête à être déployée
+Pour plus d'informations sur le déploiement, consultez la section
+sur [le déploiement](https://facebook.github.io/create-react-app/docs/deployment).
