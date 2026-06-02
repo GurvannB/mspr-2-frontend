@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #1a1a2e;
+  color-scheme: light;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #16213e;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  color: #16213e;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #4361ee;
+}
+
+button {
+  padding: 0.6rem 1.5rem;
+  background: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+button:hover:not(:disabled) {
+  background: #3a56d4;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.result.success {
+  background: #f0faf0;
+  border: 1px solid #b7ddb7;
+}
+
+.result.error {
+  background: #fff0f0;
+  border: 1px solid #ffb3b3;
+}
+
+.result p {
+  margin-bottom: 0.5rem;
+}
+
+.qr-grid {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.75rem;
+}
+
+.qr-grid img, .result img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.action {
+  font-style: italic;
+  color: #e67e22;
+}
+
+input {
+  color: #1a1a2e;
+  background: white;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+.card {
+  background: white;
+  color: #1a1a2e;
+}
+
+.password-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.password-wrapper input {
+  flex: 1;
+}
+
+.toggle-password {
+  padding: 0.6rem 0.8rem;
+  background: #eee;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  white-space: nowrap;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.toggle-password:hover {
+  background: #ddd;
+}
