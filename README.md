@@ -11,4 +11,4 @@ La variable OPENFAAS_GATEWAY_URL doit pointer vers la gateway OpenFaaS.
 Repos liés
 DevOps : https://github.com/mbidoyen/cofrap-devops
 Backend : https://github.com/mbidoyen/cofrap-backend
-EOF
+
