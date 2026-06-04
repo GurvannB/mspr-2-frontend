@@ -1,0 +1,76 @@
+.twofa-page {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  color: white;
+}
+
+.twofa-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.twofa-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.twofa-page .card {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.twofa-page .form-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.twofa-page .form-row input {
+  width: 600px;
+  max-width: 100%;
+}
+
+.qrcode-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.qrcode-image {
+  width: 280px;
+  height: 280px;
+
+  object-fit: contain;
+
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.result.error {
+  margin-top: 20px;
+  text-align: center;
+
+  padding: 15px;
+  border-radius: 12px;
+
+  color: #fecaca;
+
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.twofa-back-link {
+  display: block;
+  text-align: center;
+
+  margin-top: 2rem;
+
+  color: white;
+  text-decoration: none;
+}
+
+.twofa-back-link:hover {
+  opacity: 0.8;
+}

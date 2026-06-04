@@ -1,8 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { configDefaults } from "vitest/config";
 
 export default defineConfig({
   plugins: [react()],
+
   server: {
     proxy: {
       "/api": {
@@ -11,5 +13,12 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
+  },
+
+  test: {
+    environment: "happy-dom",
+    globals: true,
+    setupFiles: "./src/setupTests.ts",
+    exclude: [...configDefaults.exclude],
   },
 });

@@ -1,0 +1,181 @@
+/* Fond général */
+body {
+  margin: 0;
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+  background: radial-gradient(
+    circle at top left,
+    #2563eb 0%,
+    #1e293b 35%,
+    #0f172a 100%
+  );
+
+  min-height: 100vh;
+}
+
+/* Page */
+.home-page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+}
+
+/* Carte centrale */
+.hero-card {
+  width: 100%;
+  max-width: 750px;
+
+  padding: 3rem;
+
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+  color: white;
+}
+
+/* Logo */
+.logo-section {
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+
+.logo-icon {
+  width: 90px;
+  height: 90px;
+
+  margin: 0 auto 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(37, 99, 235, 0.25);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo-section h1 {
+  margin: 0;
+
+  font-size: 4rem;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+.subtitle {
+  margin-top: 1rem;
+
+  color: #cbd5e1;
+
+  font-size: 1.1rem;
+}
+
+/* Texte principal */
+.action-section {
+  text-align: center;
+}
+
+.action-section h2 {
+  margin-bottom: 0.5rem;
+
+  font-size: 2rem;
+}
+
+.welcome-text {
+  color: #cbd5e1;
+
+  margin-bottom: 2rem;
+}
+
+/* Boutons */
+.button-group {
+  display: flex;
+
+  justify-content: center;
+  gap: 1rem;
+
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  text-decoration: none;
+
+  padding: 1rem 2rem;
+
+  border-radius: 14px;
+
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-3px);
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.primary:hover {
+  background: #1d4ed8;
+}
+
+.secondary {
+  background: white;
+  color: #0f172a;
+}
+
+.secondary:hover {
+  background: #f8fafc;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-card {
+    padding: 2rem;
+  }
+
+  .logo-section h1 {
+    font-size: 2.8rem;
+  }
+
+  .action-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    justify-content: center;
+    width: 100%;
+  }
+}
