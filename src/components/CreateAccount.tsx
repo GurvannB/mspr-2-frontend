@@ -24,7 +24,7 @@ export default function CreateAccount() {
                 Génère mot de passe + 2FA en une seule requête.
                 Les QR codes sont envoyés par email.
             </p>
-            <div className="form-row">
+            <div className="form-col">
                 <input
                     type="text"
                     placeholder="Username (ex: jean.dupont)"

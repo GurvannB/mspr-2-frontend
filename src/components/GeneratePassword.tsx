@@ -34,13 +34,7 @@ export default function GeneratePassword() {
                     {result.error ? (
                         <p>❌ {result.error}</p>
                     ) : (
-                        <>
-                            <p>✅ {result.message}</p>
-                            <img
-                                src={`data:image/png;base64,${result.qrcode_base64}`}
-                                alt="QR mot de passe"
-                            />
-                        </>
+                        <p>✅ {result.message}</p>
                     )}
                 </div>
             )}
