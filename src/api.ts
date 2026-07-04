@@ -1,10 +1,10 @@
 const BASE_URL = '/api/function'
 
-export async function createAccount(username: string) {
+export async function createAccount(username: string, email: string) {
     const res = await fetch(`${BASE_URL}/create-account`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username })
+        body: JSON.stringify({ username, email })
     })
     return res.json()
 }

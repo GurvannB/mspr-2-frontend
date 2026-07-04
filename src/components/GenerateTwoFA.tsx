@@ -17,7 +17,10 @@ export default function GenerateTwoFA() {
     return (
         <section className="card">
             <h2>Générer le 2FA</h2>
-            <p className="description">Génère uniquement le secret TOTP pour un utilisateur existant</p>
+            <p className="description">
+                Génère un nouveau secret TOTP pour un utilisateur existant.
+                Le QR code est envoyé à l'adresse email enregistrée lors de la création du compte.
+            </p>
             <div className="form-row">
                 <input
                     type="text"
@@ -34,13 +37,7 @@ export default function GenerateTwoFA() {
                     {result.error ? (
                         <p>❌ {result.error}</p>
                     ) : (
-                        <>
-                            <p>✅ {result.message}</p>
-                            <img
-                                src={`data:image/png;base64,${result.qrcode_base64}`}
-                                alt="QR 2FA"
-                            />
-                        </>
+                        <p>✅ {result.message}</p>
                     )}
                 </div>
             )}
